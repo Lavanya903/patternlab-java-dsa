@@ -1,0 +1,7 @@
+{
+  "name": "patternlab-java-dsa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Visual Java DSA learning, interview practice, and a complexity coach",
+  "scripts": { "test": "node tests/run.cjs" }
+}
