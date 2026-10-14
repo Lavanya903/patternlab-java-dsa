@@ -3,8 +3,6 @@
 A visual, interactive workspace for understanding algorithms, building logic,
 and practising Java interview problems.
 
-![Graph learning preview](docs/graph-preview.png)
-
 ## Features
 
 - 365 curated practice entries and an independent Core 75 starter track.
