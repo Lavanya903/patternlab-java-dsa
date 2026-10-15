@@ -5,9 +5,9 @@ and practising Java interview problems.
 
 ## Features
 
-- 365 curated practice entries and an independent Core 75 starter track.
-- 69 pattern guides: recognition clues, state, invariants, and counterexamples.
-- 24 runnable visual lessons: eight foundations, nine graph algorithms, and seven string/HashMap labs.
+- An expanded practice library (originally 365 entries) and an independent Core 75 starter track.
+- 77 pattern guides: recognition clues, state, invariants, and counterexamples.
+- 27 runnable visual lessons: eight foundations, twelve graph lessons, and seven string/HashMap labs.
 - Graph BFS/DFS, Kahn topological sorting, Dijkstra, Union-Find, Kruskal MST,
   Bellman–Ford, Floyd–Warshall, and bipartite coloring.
 - String windows, frequency maps, anagram groups, prefix-history maps,
@@ -56,7 +56,7 @@ See [hosting instructions](docs/FREE-HOSTING.md).
 
 This is a static learning application. JavaScript trace generators simulate the
 provided Java algorithms; it does not compile arbitrary Java or provide a custom
-animation for all 365 practice entries. Some Java scaffolds contain placeholders.
+animation for every practice entry. Some Java scaffolds contain placeholders.
 
 The complexity coach is a guided worksheet, not a universal verifier. Unclear
 helpers, recursion, collection growth, object retention, library costs, and
@@ -80,3 +80,5 @@ a local file to a hosted website; storage does not automatically cross origins.
 - `complexity.js`: complexity worksheet, teaching examples, and quizzes.
 - `*.css`: responsive interface styling.
 - `tests/`: validation scripts.
+
+Graph expansion: 43 RisingBrain graph entries mapped across seven groups (checked 2026-10-16). BFS applications cover reachability, components, grids, multi-source spread, implicit states, coloring, and bitmask state. New visual lessons include multi-source BFS, connected components, and Shortest Path Visiting All Nodes. The full library is independently curated; only the graph checklist is mapped to the referenced sheet.
