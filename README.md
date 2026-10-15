@@ -6,8 +6,8 @@ and practising Java interview problems.
 ## Features
 
 - An expanded practice library (originally 365 entries) and an independent Core 75 starter track.
-- 77 pattern guides: recognition clues, state, invariants, and counterexamples.
-- 27 runnable visual lessons: eight foundations, twelve graph lessons, and seven string/HashMap labs.
+- Pattern-specific recognition guides: recognition clues, state, invariants, and counterexamples.
+- 37 runnable visual lessons: eight foundations, twenty-two graph lessons, and seven string/HashMap labs.
 - Graph BFS/DFS, Kahn topological sorting, Dijkstra, Union-Find, Kruskal MST,
   Bellman–Ford, Floyd–Warshall, and bipartite coloring.
 - String windows, frequency maps, anagram groups, prefix-history maps,
@@ -82,3 +82,5 @@ a local file to a hosted website; storage does not automatically cross origins.
 - `tests/`: validation scripts.
 
 Graph expansion: 43 RisingBrain graph entries mapped across seven groups (checked 2026-10-16). BFS applications cover reachability, components, grids, multi-source spread, implicit states, coloring, and bitmask state. New visual lessons include multi-source BFS, connected components, and Shortest Path Visiting All Nodes. The full library is independently curated; only the graph checklist is mapped to the referenced sheet.
+
+All 56 graph practice entries now have individual playbooks (state, transitions, example, counterexample, and complexity), organized across seven families. Additional visual models: directed cycle colors, low-link bridges/cut vertices, DAG path enumeration, reverse safe-state elimination, bottleneck Dijkstra, bounded-edge flights, global negative-cycle detection, transitive closure, DSU representative metadata, and Prim MST. Related models are labeled; a numbered graph demo is not a complete grid/string/problem simulation.
