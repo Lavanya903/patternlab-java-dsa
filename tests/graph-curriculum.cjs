@@ -1,6 +1,6 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
 const c={};vm.createContext(c);
-for(const file of ['catalogue.js','teaching.js','labs.js','graph-curriculum.js'])vm.runInContext(fs.readFileSync(__dirname+'/../'+file,'utf8'),c);
+for(const file of ['catalogue.js','teaching.js','labs.js','graph-curriculum.js','graph-patterns.js','graph-variants.js'])vm.runInContext(fs.readFileSync(__dirname+'/../'+file,'utf8'),c);
 vm.runInContext('globalThis.data={problemBank,guides,graphAlgorithms,graphSheetGroups,graphTrace,visitAllJava}',c);
 const {problemBank:bank,guides,graphAlgorithms,graphSheetGroups:groups,graphTrace:trace}=c.data;
 assert.equal(groups.flatMap(g=>g[1]).length,43);
@@ -8,7 +8,7 @@ assert.deepEqual(Array.from(groups,g=>g[1].length),[12,7,5,8,5,3,3]);
 for(const [,rows]of groups)for(const [,title,key]of rows){const p=bank.find(p=>p.title===title);assert(p,title);assert(guides[key]);assert.equal(p.key,key)}
 assert.equal(new Set(bank.map(p=>p.id)).size,bank.length);
 assert.equal(bank.filter(p=>p.core).length,75);
-assert.equal(Object.keys(graphAlgorithms).length,12);
+assert.equal(Object.keys(graphAlgorithms).length,22);
 assert.equal(bank.find(p=>p.title==='Shortest Path Visiting All Nodes').url,'https://leetcode.com/problems/shortest-path-visiting-all-nodes/description/');
 const run=(id,n,edges,source=0)=>trace(id,n,edges,source,false);
 assert.equal(run('visitall',4,[[0,1,1],[0,2,1],[0,3,1]]).at(-1).vars.result,4);
